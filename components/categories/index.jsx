@@ -1,5 +1,7 @@
 import Card from "@/components/Cart";
 import Link from "next/link";
+import { Fragment } from "react";
+import Button from "../button";
 
 function Categories() {
   return (
@@ -23,9 +25,10 @@ function Categories() {
         </Link>
       </div>
       <div className="flex py-5 justify-center">
-        <button className="bg-transparent transform hover:bg-green-600 hover:scale-105 duration-700 text-green-800 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded">
-          BROWSE ALL SECTORS
-        </button>
+        <Button
+          style="bg-transparent transform shadow-lg hover:bg-[#8fc1e3] hover:scale-105 duration-700 text-[#31708E] hover:text-black py-2 px-4 border border-[#8fc1e3] hover:border-transparent rounded"
+          title="BROWSE ALL SECTORS"
+        />
       </div>
     </div>
   );

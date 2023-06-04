@@ -1,46 +1,35 @@
 import Link from "next/link";
-
 import { MdLayers, MdMyLocation } from "react-icons/md";
 import { BsBookmarkCheckFill } from "react-icons/bs";
+
+import Paragraph from "@/components/paragraph";
+import Button from "@/components/button";
 
 function JobContainer() {
   return (
     <>
-    <div className="flex w-full rounded-lg p-5 border hover:bg-white">
-      <div className="row w-4/5">
-        <div className="p-2">
-          <span className="text-lg py-5 uppercase text-green-900">
-            intership
-          </span>
-          <h3 className="text-3xl py-5">Frontend Development</h3>
+      <div className="flex w-full shadow-lg rounded-lg p-5 border transform hover:bg-white hover:scale-105 duration-700">
+        <div className="row w-4/5">
+          <div className="p-2">
+            <Paragraph style={"text-sm md:text-md uppercase text-[#687864"} title={"intership"}/>
+            <Paragraph style={"text-md md:text-2xl py-5"} title={"Frontend Development"}/>
+          </div>
+          <div className="flex gap-5 text-sm">
+            <div className="flex items-center gap-1 uppercase">
+              <MdLayers />
+              <Link href={"/"}>Job company name</Link>
+            </div>
+            <div className="flex items-center gap-1 uppercase">
+              <MdMyLocation />
+              <span>city , conutry</span>
+            </div>
+          </div>
         </div>
-        <div className="flex gap-5 text-sm">
-          <div className="flex items-center gap-1 uppercase">
-            <MdLayers />
-            <Link href={"/"}>Job company name</Link>
-          </div>
-          <div className="flex items-center gap-1 uppercase">
-            <MdMyLocation />
-            <span>city , conutry</span>
-          </div>
+        <div className="flex justify-center items-center text-sm lg:text-md w-1/5">
+          <Button style="btn border p-3 rounded-lg transform hover:bg-[#8FC1E3] " title={"Apply Job"}/>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-end gap-5 text-lg w-1/3">
-        <button
-          class="text-xl transform hover:scale-105 duration-500 rounded-full hover:text-red-800"
-          type="button"
-        >
-          <BsBookmarkCheckFill />
-        </button>
-        <button
-          className="btn border px-5 py-3 rounded-lg bg-green-700 text-white text-start"
-          type="button"
-        >
-          Apply Job
-        </button>
-      </div>
-    </div>
-  </>
+    </>
   );
 }
 
