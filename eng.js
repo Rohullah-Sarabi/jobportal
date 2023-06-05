@@ -9,7 +9,7 @@ const EnglishContent = {
       { title: "Canditates", link: "/canditates" },
       { title: "Contact US", link: "/contact" },
       { title: "Blog", link: "/blog" },
-      { title: "Sign In", link: "/login" },
+      { title: "Sign In", link: "/signin" },
       { title: "Sign Up", link: "/signup" },
     ],
   },

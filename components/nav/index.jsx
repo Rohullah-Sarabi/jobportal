@@ -64,8 +64,8 @@ function Nav() {
               className={`items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0`}
             >
               {
-                EnglishContent.nav.menu.map((item)=>(
-                  <li className="text-white">
+                EnglishContent.nav.menu.map((item,index)=>(
+                  <li className="text-white" key={index}>
                     <Link href={item.link}>{item.title}</Link>
                   </li>
                 ))
